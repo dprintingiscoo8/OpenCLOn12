@@ -4,7 +4,6 @@ name: PR Build
 name: Build Windows
 
 on:
-  on:
   pull_request:
     branches: [ "master" ]
 
@@ -16,7 +15,6 @@ jobs:
       date:
       ver:
       ver_pure:
-
     steps:
     - uses: actions/checkout@v4
     - name: Setup GitHub environment 
