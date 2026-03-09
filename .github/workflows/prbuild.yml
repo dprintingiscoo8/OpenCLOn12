@@ -4,7 +4,9 @@ name: PR Build
 name: Build Windows
 
 on:
-  workflow_call:
+  on:
+  pull_request:
+    branches: [ "master" ]
 
 jobs:
   build_windows:
